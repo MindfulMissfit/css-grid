@@ -1,0 +1,9 @@
+----- OPDRACHT 2 -----
+-                    -
+- Vincent Vanthienen -
+-                    -
+-   Benchapon Pham   -
+-                    -
+-   Thomas Corbeel   -
+-                    -
+-----  CSS-Grid  -----
