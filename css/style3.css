@@ -92,7 +92,6 @@ h3{
     background-color: #F6E5E7;
     height: 100px;
     display: grid;
-
     justify-content: center;
     grid-template-rows: 1fr 1fr;
 }
@@ -103,17 +102,30 @@ h3{
 .user{
   display: grid;
     grid-template-columns: 30px 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
+    justify-self: flex-end;
 }
 .user p{
     margin: 0;
     align-self: center;
+    font-size: 0.8em;
+    
 }
+.user
 .comments{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: grid;
+    grid-gap: 1em;
 }
 .reply{
-    width: 400px
+    width: 400px;
+    justify-self: flex-end;
+    text-align: right;
+    grid-gap: 5px;
+}
+.text_box{
+    border: 1px solid #F6F6F6;
+    border-radius: 4px;
+}
+input{
+    width: 400px;
 }
