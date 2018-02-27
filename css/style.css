@@ -19,7 +19,7 @@
 .topic1{
     display:grid;
     text-align: center;
-    background-color: antiquewhite;
+    background-color:  #ffeef0;
     padding: 5px;
 }
 .topic1 img{
@@ -51,13 +51,21 @@
 }
 .topiclist{
     text-align: center;
+    position: relative;
     margin: 0px auto;
     padding: 10px;
 }
+.extra{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+    position: relative;
+}
+
 /*header*/
 header{
     margin-top: 0px;
-    background-color:  #ffeef0;
+    background-color: #ffeef0;
     text-align: center;
 }
 header h1{
@@ -71,7 +79,7 @@ header input{
     width: 80%;
     padding-left: 10px;
     border: 5px solid pink;
-    background-color: #ffeef0;
+    background-color: rgba( 241, 239, 250, 0.931 );
     margin: 20px;
     font-size: 20px;
 }
@@ -87,6 +95,7 @@ header button{
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
 /*header*/
 nav{
     display: grid;
@@ -107,10 +116,9 @@ nav{
     height: 60px;
     width: 200px;
     display:grid;
+    margin-right: 10px;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 30px;
-    
-
 }
 .p1{
     grid-column: 1;
@@ -120,6 +128,7 @@ nav{
     align-self: flex-end;
     text-align: right;
     color: #BBB;
+    font-size: 15px;
 }
 .p2{
     grid-column: 1;
@@ -128,6 +137,7 @@ nav{
     margin: 0px;
     align-self: flex-start;
     text-align: right;
+    font-size: 15px;
 }
 .p2 a{
     color: pink;
