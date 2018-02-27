@@ -1,0 +1,259 @@
+h2 {
+    padding-left: 1em;
+}
+
+.header {
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.header_title {
+    font-size: 2em;
+}
+
+.header_logo {
+    grid-column: 1/-1;
+    width: 35%;
+    align-self: center;
+    justify-self: center;
+    padding: 1.5em;
+}
+
+.header_login {
+    grid-column: 1/-1;
+    grid-row: 3 / span 1;
+    justify-self: center;
+    margin: 1em 0 3em 0;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.header_titlecontainer {
+    grid-column: 1/-1;
+    width: 70%;
+    justify-self: center;
+    font-size: .7em;
+    padding: 1.5em 0;
+}
+
+.header_image {
+    height: 6em;
+    background-size: cover;
+    background-position: center;
+}
+
+.header_image-1 {
+    background-image: url(../images/user1.png);
+}
+
+.header_image-2 {
+    background-image: url(../images/user2.png);
+}
+
+.header_image-3 {
+    background-image: url(../images/user3.png);
+}
+
+.header_image-4 {
+    background-image: url(../images/user4.png);
+}
+
+.header_image-5 {
+    background-image: url(../images/user5.png);
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+    background-size: cover;
+    background-position: center;
+    height: 100%
+}
+
+.header_image-6 {
+    background-image: url(../images/user6.png);
+}
+
+.header_image-7 {
+    background-image: url(../images/user7.png);
+    grid-column: 4;
+    grid-row: 5 / span 2;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.header_image-8 {
+    background-image: url(../images/user8.png);
+}
+
+.header_image-9 {
+    background-image: url(../images/user9.png);
+}
+
+.header_image-10 {
+    background-image: url(../images/user10.png);
+}
+
+.header_image-11 {
+    background-image: url(../images/user11.png);
+}
+
+.header_image-12 {
+    background-image: url(../images/user12.png);
+}
+
+.main {
+    display: grid;
+}
+
+.main_title {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.main_about {
+    width: 60%;
+    justify-self: center;
+    margin: 3em 0;
+}
+
+@media(min-width: 40em){
+    .header {
+        grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+    }
+    .header_image-5 {
+        grid-column: auto;
+        grid-row: auto;
+        height: 100%;
+    }
+
+    .header_image-7 {
+        grid-column: auto;
+        grid-row: auto;
+        height: 100%;
+    }
+}
+
+@media(min-width: 60em) {
+    .header {
+        grid-template-columns: repeat(10, minmax(auto, 6em));
+        padding-top: 2em;
+        
+    }
+    
+    .header_logo {
+        grid-column: 1 / span 6;
+        justify-self: start;
+        width: 80%;
+    }
+    
+    .header_login {
+        grid-column: 8;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        margin: 1em 0 1em 0;
+    }
+    
+    .header_titlecontainer {
+        grid-column: 1 / span 5;
+        width: 90%;
+        justify-self: start;
+        font-size: 1em;
+        padding: 1em 0 2em 1em;
+        align-self: start;
+    }
+    
+    .header_image-1 {
+        grid-column: 6;
+        align-self: end;
+    }
+    
+    .header_image-2 {
+        grid-column: 9;
+        align-self: end;
+    }
+    
+    .header_image-3 {
+        grid-column: 1;
+    }
+    
+    .header_image-4 {
+        grid-column: 3;
+    }
+    
+    .header_image-5 {
+        grid-column: 4 / span 2;
+        grid-row: 3 / span 2;
+        height: 200px;
+    }
+    
+    .header_image-6 {
+        grid-column: 7;
+    }
+    
+    .header_image-7 {
+        grid-column: 9;
+        grid-row: 3;
+    }
+    
+    .header_image-8 {
+        grid-column: 10;
+    }
+    
+    .header_image-9 {
+        grid-column: 2;
+    }
+    
+    .header_image-10 {
+        grid-column: 7 / span 2;
+        grid-row: 4;
+        height: 200px;
+    }
+    
+    .header_image-11 {
+        grid-column: 9;
+    }
+    
+    .header_image-12 {
+        grid-column: 3;
+        grid-row: 4;
+        align-self: end;
+    }
+    
+    .main {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5em;
+        max-width: 80%;
+        margin: 5em auto;
+        align-content: center;
+    }
+    
+    .main_about{
+        justify-self: left;
+        margin: 0;
+        width: 80%;
+    }
+    
+    .main_about-1 {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
+    
+    .main_about-2 {
+        grid-column: 2;
+    }
+    
+    .main_about-3 {
+        grid-column: 2;
+    }
+
+}
