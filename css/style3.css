@@ -100,10 +100,15 @@ h3{
     justify-self: center;
 }
 .user{
-  display: grid;
+    display: grid;
     grid-template-columns: 30px 1fr;
     grid-gap: 5px;
     width: 118px;
+    
+    
+}
+.reply .user{
+    justify-self: end
 }
 .user p{
     margin: 0;
@@ -114,17 +119,29 @@ h3{
     display: grid;
     grid-gap: 1em;
 }
-.reply{
+.reply_form{
     width: 500px;
     justify-self: flex-end;
     justify-content:flex-end; 
     text-align: right;
     grid-gap: 5px;
 }
+.reply{
+    width: 500px;
+    justify-self: flex-end;
+    justify-content: end; 
+    text-align: right;
+    grid-gap: 5px;
+}
 
+main{
+    padding: 2em;
+}
 .text_box{
     border: 1px solid #F6F6F6;
     border-radius: 4px;
+    padding: 1em;
+    display: grid;
 }
 input{
     width: 400px;
@@ -132,7 +149,7 @@ input{
 .answer_input{
     background-color: #434757;
     display: grid;
-    grid-template-columns: 30px 540px;
+    grid-template-columns: 30px 3fr 1fr;
     width: 100%;
     height: 50px;
     align-content: center;
@@ -146,7 +163,19 @@ input{
 .reply_box{
     background-color: #F6F6F6;
     width: 500px;
+    display: grid;
     justify-self: flex-end;
     justify-content:center; 
+    padding: 20px;
+}
+.reply_box form{
     text-align: center;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #3B1CFF;
+    text-align: center;
+    padding: 0.5em 1em;
+    
 }
